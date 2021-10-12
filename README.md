@@ -2,7 +2,7 @@
 ## 每日用純JS完成一個功能 持續30天
 #### (主要來練習JS)
 
-## 1. Day1 - Drun kit
+## Day 1 - Drun kit
 1.  HTML5 中的 data-* attribute 屬性
     - HTML中可以自定義data-*, 例如`data-key=83`...etc
     - 可以透過以下來抓到DOM上對應的data-key (e為eventlisten的event)
