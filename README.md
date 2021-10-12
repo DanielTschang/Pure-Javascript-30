@@ -3,3 +3,4 @@
 #### 主要來練習JS
 
 1. Day1 - Drun kit
+@HTML5 中的 data-* attribute 屬性
