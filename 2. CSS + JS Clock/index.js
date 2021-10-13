@@ -17,4 +17,5 @@ const setDate = () =>{
   const hourDegree = (hour_ * 30) + 90
   HourHand.style.transform = `rotate(${hourDegree}deg)`
 }
+
 setInterval(setDate,1000)
