@@ -2,7 +2,7 @@
 ## 每日用純JS完成一個功能 持續30天
 #### (主要來練習JS)
 
-## Day 1 - Drun kit
+## Day 1 - Drum kit
 [Demo](https://cssource1156.github.io/Pure-Javascript-30/1.%20Drum%20Kit/index)
 1.  HTML5 中的 data-* attribute 屬性
     - HTML中可以自定義data-*, 例如`data-key=83`...etc
