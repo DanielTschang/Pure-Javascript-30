@@ -9,7 +9,7 @@
     ```JavaScript
     querySelector(`div[data-key="${e.keyCode}"]`)
     ```
-    [延伸閱讀data attribute](https://pjchender.blogspot.com/2017/01/html-5-data-attribute.html)
+    [延伸閱讀 : data attribute](https://pjchender.blogspot.com/2017/01/html-5-data-attribute.html)
 2. audio tag
     - 透過```<audio></audio>```的tag可以實現音樂播放
         ```JavaScript
@@ -26,3 +26,17 @@
     - 在JQuery中通常使用```key.addClass('xxx')```
     - 在Vanilla JS中使用```key.ClassList.add('xxx')```
         
+        
+## Day 2 - CSS + JS Clock
+-   `transform-origin` CSS 屬性
+
+    -   參數：x-axis y-axis z-axis
+    -   or %數 100% ->最右邊 (可超過100%or小於0%)
+
+-   `transition-timing-function` CSS 屬性
+
+    -   製造指針擺動效果
+    -   還有很多不同效果
+    -   [延伸閱讀 ： 其他效果連結](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function)
+
+    `transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);`
