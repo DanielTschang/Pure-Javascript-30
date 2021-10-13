@@ -3,6 +3,7 @@
 #### (主要來練習JS)
 
 ## Day 1 - Drun kit
+[Demo](https://cssource1156.github.io/Pure-Javascript-30/1.%20Drum%20Kit/index)
 1.  HTML5 中的 data-* attribute 屬性
     - HTML中可以自定義data-*, 例如`data-key=83`...etc
     - 可以透過以下來抓到DOM上對應的data-key (e為eventlisten的event)
@@ -28,6 +29,7 @@
         
         
 ## Day 2 - CSS + JS Clock
+[Demo](https://cssource1156.github.io/Pure-Javascript-30/2.%20CSS%20%2B%20JS%20Clock/index)
 -   `transform-origin` CSS 屬性
 
     -   參數：x-axis y-axis z-axis
