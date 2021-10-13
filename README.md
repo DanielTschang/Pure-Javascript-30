@@ -9,6 +9,7 @@
     ```JavaScript
     querySelector(`div[data-key="${e.keyCode}"]`)
     ```
+    [延伸閱讀data attribute](https://pjchender.blogspot.com/2017/01/html-5-data-attribute.html)
 2. audio tag
     - 透過```<audio></audio>```的tag可以實現音樂播放
         ```JavaScript
