@@ -69,4 +69,33 @@
         output=> DomStringMap{sizing:"px",name:"hi"}
         可以直接用 this.dataset.sizing來取值
     ```
-- 
+
+```javascript=
+    <label for="spacing">Spacing:</label>
+    <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+    <label for="blur">Blur:</label>
+    <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+    <label for="base">Base Color</label>
+    <input id="base" type="color" name="base" value="#ffc600">
+```
+- tips
+    1. 用 name 指定變更的 Css Variables
+    2. 用 data-sizing 指定 Css Variables 吃的單位
+
+- 加這兩個EventListener來達到動態改變
+
+    [Event Types](https://developer.mozilla.org/en-US/docs/Web/Events)
+
+```javascript=
+inputs.forEach((input) => input.addEventListener('change', handleUpdate));
+
+//inputs.forEach((input) => input.addEventListener('mousemove', handleUpdate));
+這邊改用 "input" event not mousemove
+
+
+function handleUpdate() {
+    const suffix = this.dataset.sizing || '';
+    document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+}
