@@ -54,7 +54,7 @@
     } 
     ```
     - 要使用時透過```var```來使用 e.g:
-    ```
+    ```JavaScript
     img{
         background: var(--base)
     }
