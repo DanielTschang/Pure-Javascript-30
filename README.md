@@ -42,3 +42,31 @@
     -   [延伸閱讀 ： 其他效果連結](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function)
 
     `transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);`
+    
+## Day 3 - CSS variable with JS
+[Demo](https://cssource1156.github.io/Pure-Javascript-30/3.%20CSS%20variable%20with%20JS/index)
+-   宣告CSS變數
+    -   需要透過設置在root且前面加上 "- -"來宣告變數
+
+    ```
+    :root{
+        --base: #ffc600;
+    } 
+    ```
+    - 要使用時透過```var```來使用 e.g:
+    ```
+    img{
+        background: var(--base)
+    }
+    ```
+    
+
+-   data attribute使用
+    -   呼應 Day-1 的data-* attribute，可以透過```this.dataset```來取得JSON物件，e.g:
+    ```javascript
+        <input data-sizing="px", data-name="hi">
+        console.log(this.dataset)
+        output=> DomStringMap{sizing:"px",name:"hi"}
+        可以直接用 this.dataset.sizing來取值
+    ```
+- 
