@@ -63,14 +63,14 @@
 
 -   data attribute使用
     -   呼應 Day-1 的data-* attribute，可以透過```this.dataset```來取得JSON物件，e.g:
-    ```javascript
+    ```Javascript
         <input data-sizing="px", data-name="hi">
         console.log(this.dataset)
         output=> DomStringMap{sizing:"px",name:"hi"}
         可以直接用 this.dataset.sizing來取值
     ```
 
-```javascript=
+```Javascript
     <label for="spacing">Spacing:</label>
     <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
 
@@ -88,7 +88,7 @@
 
     [Event Types](https://developer.mozilla.org/en-US/docs/Web/Events)
 
-```javascript=
+```Javascript
 inputs.forEach((input) => input.addEventListener('change', handleUpdate));
 
 //inputs.forEach((input) => input.addEventListener('mousemove', handleUpdate));
