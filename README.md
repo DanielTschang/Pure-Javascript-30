@@ -48,13 +48,13 @@
 -   宣告CSS變數
     -   需要透過設置在root且前面加上 "- -"來宣告變數
 
-    ```
+    ```Javascript
     :root{
         --base: #ffc600;
     } 
     ```
     - 要使用時透過```var```來使用 e.g:
-    ```
+    ```Javascript
     img{
         background: var(--base)
     }
