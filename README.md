@@ -48,13 +48,13 @@
 -   宣告CSS變數
     -   需要透過設置在root且前面加上 "- -"來宣告變數
 
-    ```Javascript
+    ```
     :root{
         --base: #ffc600;
     } 
     ```
     - 要使用時透過```var```來使用 e.g:
-    ```Javascript
+    ```
     img{
         background: var(--base)
     }
@@ -63,14 +63,14 @@
 
 -   data attribute使用
     -   呼應 Day-1 的data-* attribute，可以透過```this.dataset```來取得JSON物件，e.g:
-    ```Javascript
+    ```javascript
         <input data-sizing="px", data-name="hi">
         console.log(this.dataset)
         output=> DomStringMap{sizing:"px",name:"hi"}
         可以直接用 this.dataset.sizing來取值
     ```
 
-```Javascript
+```javascript=
     <label for="spacing">Spacing:</label>
     <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
 
@@ -88,7 +88,7 @@
 
     [Event Types](https://developer.mozilla.org/en-US/docs/Web/Events)
 
-```Javascript
+```javascript=
 inputs.forEach((input) => input.addEventListener('change', handleUpdate));
 
 //inputs.forEach((input) => input.addEventListener('mousemove', handleUpdate));
@@ -137,3 +137,6 @@ function handleUpdate() {
     },{
     }))
     ```
+    
+## Day 5 - Flexbox + JavaScript Image Gallery
+[Demo](https://danieltschang.github.io/Pure-Javascript-30/5.%20Flexbox%20%2B%20JavaScript%20Image%20Gallery/index)
