@@ -335,7 +335,7 @@ function handleUpdate() {
     ![](https://i.imgur.com/jEvy7Oy.png)
     
     5. align-items (*重要)
-    ```css=
+    ```ss=
     .flex-container {
       align-items: flex-start | flex-end | center | baseline | stretch;
     }
