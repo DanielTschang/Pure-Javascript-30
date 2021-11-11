@@ -417,3 +417,24 @@ function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }
 ```
+
+
+## Day 7 - Array Cardio Day 2
+- some
+- every
+- find
+- findIndex
+- 刪除array中某值
+    - splice
+    用法很多overload很多不同的參數
+        - (開始的index, 刪除幾個)
+        - (開始的index, 刪除幾個index, 插入的index)
+    `comments.splice(index,1)`
+    - slice
+    用切的
+    ```Javascript
+    const newComments = [
+      ...comments.slice(0, index),
+      ...comments.slice(index + 1)
+    ];
+    ```
