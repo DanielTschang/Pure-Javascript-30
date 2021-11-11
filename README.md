@@ -283,6 +283,7 @@ function handleUpdate() {
 ## Day 5 - Flexbox + JavaScript Image Gallery
 [Demo](https://danieltschang.github.io/Pure-Javascript-30/5.%20Flexbox%20%2B%20JavaScript%20Image%20Gallery/index)
 
+[參考](https://wcc723.github.io/css/2017/07/21/css-flex/)
 - Flex
 可以分為外屬性(Container)以及內屬性(Items)
 ![](https://i.imgur.com/cgdggoM.png)
@@ -360,3 +361,59 @@ transition 的事件
 搭配指定 e.propertyName 條件，可以把多個 transition 串起來
 - includes
 flex 變化在 chrome 為 flex-grow 事件，在 safari 為 flex 事件，可用 if (e.propertyName.includes('flex')) 解決
+
+## Day 6 - Ajax Type Ahead with fetch()
+[Demo](https://danieltschang.github.io/Pure-Javascript-30/6.%20Ajax%20Type%20Ahead%20with%20fetch/index)
+
+-  regular expression
+    當正規表達式為定值時，使用此方法可獲得較佳效能。
+    兩種方法
+    - `- var re = /ab+c/;`
+    - `var re = new RegExp('ab+c');`
+    - https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Guide/Regular_Expressions
+    - https://pjchender.dev/javascript/js-regex/
+    - RegExp(wordToMatch, 'gi')
+
+        - g modifier: global. All matches (don't return on first match)
+        - i modifier: insensitive. Case insensitive match (ignores case of [a-zA-Z])
+        - .match(regex) 返回符合的值
+        - .replace(regex, replacingWord) 返回替代後的值
+- fetch() api
+    - 用postman可以生成code
+
+- 監聽input有兩種方法
+    - change
+        要等別人輸入完並停止輸入
+        e.g:
+        - `searchInput.addEventListener('change',displayMatches)`
+    - keyup
+        動態監聽別人輸入
+        e.g:
+        - `searchInput.addEventListener('keyup',displayMatches)`
+-  array 裡的物件轉成 HTML 的方法
+
+for loop + map + return + .join('')
+`.join`用來將整個大array轉成字串
+```Javascript
+function displayMatches() {
+    const matchArray = findMatches(this.value, cities);
+    const html = matchArray
+        .map((place) => {
+            return `
+        <li>
+          <span class="name">${cityName}, ${stateName}</span>
+          <span class="population">${numberWithCommas(place.population)}</span>
+        </li>
+      `;
+        })
+        .join('');
+    suggestions.innerHTML = html;
+}.join('') 
+```
+
+- 將數字用逗號隔開 (Stackoverflow)
+```Javascript
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+```
