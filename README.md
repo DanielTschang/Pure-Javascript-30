@@ -344,13 +344,13 @@ function handleUpdate() {
 
 - 針對內元件Items
     - flex
-    flex 是縮寫，裡面依序包含三個屬性 flex-grow、flex-shrink 和 flex-basis，如果只設定一個則是 flex-grow。
+        - 是縮寫，裡面依序包含三個屬性 flex-grow、flex-shrink 和 flex-basis，如果只設定一個則是 flex-grow。
         - flex-grow : 若是2，則代表是將剩餘空間分配，全部items之flex-grow加總分之2的剩餘空間
             - e.g 剩餘700px 則將700切分在依flex-grow比例給出去。
         - flex-shrink：flex-grow之相反，是當空間不足時，如何切分空間。
         - flex-basis： 預設值爲 auto，表示其預設分配到的空間，與 width 很像，但優先程度較高。
     - align-self
-    可以跳脫container定義align的方式，自己對自己再定義align方式
+        - 可以跳脫container定義align的方式，自己對自己再定義align方式
 
 - transition-timing-function 先縮後放效果
 效果參數為：cubic-bezier(0.61, -0.19, 0.7, -0.11)
