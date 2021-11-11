@@ -306,21 +306,21 @@ function handleUpdate() {
 - 外容器Container
     1. Display
     需要透過display宣告為flex才能使之成為flex。但還有另一種叫做inline-flex，類似於inline-block + flex。
-    ```css=
+    ```css
     .flex-container {
       display: flex | inline-flex;
     }
     ```
     2. flex-container
     就是定義row or column方向。
-    ```css=
+    ```css
     .flex-container {
       flex-direction: row | row-reverse | column | column-reverse;
     }
     ```
     3. flex-wrap
     當格子超出width的對策，是否換行，不換｜換｜換行後row反轉
-    ```css=
+    ```css
     .flex-container {
       flex-wrap: nowrap | wrap | wrap-reverse;
     }
