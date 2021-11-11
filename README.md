@@ -327,7 +327,7 @@ function handleUpdate() {
     ```
     4. justify-content (*重要)
     主軸對齊方式
-    ```css=
+    ```css
         .flex-container {
           justify-content: flex-start | flex-end | center | space-between | space-around;
         }
@@ -335,7 +335,7 @@ function handleUpdate() {
     ![](https://i.imgur.com/jEvy7Oy.png)
     
     5. align-items (*重要)
-    ```ss=
+    ```css
     .flex-container {
       align-items: flex-start | flex-end | center | baseline | stretch;
     }
