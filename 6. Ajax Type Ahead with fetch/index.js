@@ -6,7 +6,7 @@ fetch(endpoint)
   .then(data => cities.push(...data))
   .catch(error => console.log('error', error));
 
-console.log(cities)
+
 
 function findMatches(wordToMatch, cities){
     return cities.filter(place => {
@@ -22,7 +22,12 @@ function numberWithCommas(x) {
   }
 
 function displayMatches(){
+    if(this.value===""){
+        suggestions.innerHTML = "<li>Filter for a city or a state</li>"
+        return 0;
+    }
     const matchArray = findMatches(this.value, cities)
+
     const html = matchArray.map(place =>{
         const regex = new RegExp(this.value, 'gi');
 
@@ -36,12 +41,10 @@ function displayMatches(){
         `
     }).join('');
 
-    if(this.value===""){
-        suggestions.innerHTML = ""
-    }
-    else{
-        suggestions.innerHTML = html
-    };
+    
+
+    suggestions.innerHTML = html;
+
     
 }
 
