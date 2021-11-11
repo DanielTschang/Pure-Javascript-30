@@ -421,9 +421,14 @@ function numberWithCommas(x) {
 
 ## Day 7 - Array Cardio Day 2
 - some
+    - 查看是否有符合條件的
 - every
+    - 看是不是每個都符合條件
 - find
+    - 有點像filter,但find只會回傳你要找的那個
 - findIndex
+    - 找index
+    - 若要找多個index用forEach或一般的for loop解
 - 刪除array中某值
     - splice
     用法很多overload很多不同的參數
