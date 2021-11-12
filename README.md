@@ -456,10 +456,10 @@ function numberWithCommas(x) {
     - mousemove
         - move
 - Destructuring assignment 的技巧
-   ` [a, b] = [40, 50];`
-   不過在此project不知道為什麼會一直報錯（？
+   - ` [a, b] = [40, 50];`
+   - 不過在此project不知道為什麼會一直報錯（？
 - JS 取得視窗大小
-   `window.innerWidth , window.innerHeight` 
+   - `window.innerWidth , window.innerHeight` 
 - Canvas API
     - 畫畫
     ```Javascript
