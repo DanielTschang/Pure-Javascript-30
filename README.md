@@ -443,3 +443,33 @@ function numberWithCommas(x) {
       ...comments.slice(index + 1)
     ];
     ```
+   
+## Day 8 - HTML5 Canvas
+[Demo](https://danieltschang.github.io/Pure-Javascript-30/8.%20Fun%20with%20HTML5%20Canvas/index)
+- 三個不同的event type
+    - mousedown
+        - 滑鼠按下去
+    - mouseup
+        - 滑鼠放開
+    - mouseout
+        - 滑鼠脫離element
+    - mousemove
+        - move
+- Destructuring assignment 的技巧
+   ` [a, b] = [40, 50];`
+   不過在此project不知道為什麼會一直報錯（？
+- JS 取得視窗大小
+   `window.innerWidth , window.innerHeight` 
+- Canvas API
+    - 畫畫
+    ```Javascript
+    ctx.beginPath();
+	// start from
+	ctx.moveTo(lastX, lastY);
+	// go to
+	ctx.lineTo(e.offsetX, e.offsetY);
+	ctx.stroke();
+    ```
+- hsl 顏色
+`hsl(hue, saturation, lightness)`
+    
