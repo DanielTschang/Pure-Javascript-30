@@ -330,4 +330,62 @@ function numberWithCommas(x) {
     ```
 - hsl 顏色
 `hsl(hue, saturation, lightness)`
-    
+
+## Day 9 - Dev Tools
+- Regular
+`console.log('yoyo')`
+
+
+- Interpolated
+`console.log('Hello I am a %s string!', 'hhaha')`
+
+- Styled
+`console.log('%ci am some great text','font-size:50px ; background:red')`
+
+- warning!
+`console.warn('oh no')`
+- Error :|
+`console.error('shit!')`
+- Info
+`console.info('Crocodiles eat 3-4 people per year')`
+
+- Testing
+`console.assert(1===2,'That is wroing')`
+
+`const p = document.querySelector('p');`
+
+`console.assert(p.classList.contains('ouch'), 'That is wrong!');`
+
+- clearing
+`console.clear()`
+
+- Viewing DOM Elements
+`console.log(p);`
+`console.dir(p)`
+
+- Grouping together
+```Javascript
+dogs.forEach(dog => {
+console.groupCollapsed(`${dog.name}`); //console.group
+console.log(`This is ${dog.name}`);
+console.log(`${dog.name} is ${dog.age} years old`);
+console.log(`${dog.name} is ${dog.age * 7} dog years old`);
+console.groupEnd(`${dog.name}`);`
+});
+```
+- counting
+`console.count('Wes')`
+
+- timing
+
+```Javascript
+console.time('fetching data');
+fetch('https://api.github.com/users/wesbos')
+.then(data => data.json())
+.then(data => {
+console.timeEnd('fetching data');
+console.log(data);
+});
+
+console.table(dogs);
+```
