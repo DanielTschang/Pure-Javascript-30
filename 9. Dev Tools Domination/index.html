@@ -18,60 +18,46 @@
     }
 
     // Regular
-    console.log('hello');
+    console.log('yoyo')
+
 
     // Interpolated
-    console.log('Hello I am a %s string!', '💩');
+    console.log('Hello I am a %s string!', 'hhaha')
 
     // Styled
-    // console.log('%c I am some great text', 'font-size:50px; background:red; text-shadow: 10px 10px 0 blue')
+    console.log('%ci am some great text','font-size:50px ; background:red')
 
     // warning!
-    console.warn('OH NOOO');
-
+    console.warn('oh no')
     // Error :|
-    console.error('Shit!');
-
+    console.error('shit!')
     // Info
-    console.info('Crocodiles eat 3-4 people per year');
+    console.info('Crocodiles eat 3-4 people per year')
 
     // Testing
+    console.assert(1===2,'That is wroing')
+
     const p = document.querySelector('p');
 
     console.assert(p.classList.contains('ouch'), 'That is wrong!');
 
     // clearing
-    console.clear();
+    console.clear()
 
     // Viewing DOM Elements
     console.log(p);
-    console.dir(p);
-
-    console.clear();
+    console.dir(p)
 
     // Grouping together
     dogs.forEach(dog => {
-      console.groupCollapsed(`${dog.name}`);
+      console.groupCollapsed(`${dog.name}`); //console.group
       console.log(`This is ${dog.name}`);
       console.log(`${dog.name} is ${dog.age} years old`);
       console.log(`${dog.name} is ${dog.age * 7} dog years old`);
       console.groupEnd(`${dog.name}`);
     });
-
     // counting
-
-    console.count('Wes');
-    console.count('Wes');
-    console.count('Steve');
-    console.count('Steve');
-    console.count('Wes');
-    console.count('Steve');
-    console.count('Wes');
-    console.count('Steve');
-    console.count('Steve');
-    console.count('Steve');
-    console.count('Steve');
-    console.count('Steve');
+    console.count('Wes')
 
     // timing
     console.time('fetching data');
@@ -83,6 +69,7 @@
       });
 
     console.table(dogs);
+
 
   </script>
 </body>
