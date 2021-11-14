@@ -3,7 +3,7 @@
 #### (主要來練習JS)
 
 ## Day 1 - Drum kit
-[Demo](https://danieltschang.github.io/Pure-Javascript-30/1.%20Drum%20Kit/index)
+[Demo](https://danieltschang.github.io/Pure-Javascript-30/01.%20Drum%20Kit/index)
 1.  HTML5 中的 data-* attribute 屬性
     - HTML中可以自定義data-*, 例如`data-key=83`...etc
     - 可以透過以下來抓到DOM上對應的data-key (e為eventlisten的event)
@@ -29,7 +29,7 @@
         
         
 ## Day 2 - CSS + JS Clock
-[Demo](https://danieltschang.github.io/Pure-Javascript-30/2.%20CSS%20%2B%20JS%20Clock/index)
+[Demo](https://danieltschang.github.io/Pure-Javascript-30/02.%20CSS%20%2B%20JS%20Clock/index)
 -   `transform-origin` CSS 屬性
 
     -   參數：x-axis y-axis z-axis
@@ -44,7 +44,7 @@
     `transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);`
     
 ## Day 3 - CSS variable with JS
-[Demo](https://danieltschang.github.io/Pure-Javascript-30/3.%20CSS%20variable%20with%20JS/index)
+[Demo](https://danieltschang.github.io/Pure-Javascript-30/03.%20CSS%20variable%20with%20JS/index)
 -   宣告CSS變數
     -   需要透過設置在root且前面加上 "- -"來宣告變數
 
@@ -139,7 +139,7 @@ function handleUpdate() {
     ```
     
 ## Day 5 - Flexbox + JavaScript Image Gallery
-[Demo](https://danieltschang.github.io/Pure-Javascript-30/5.%20Flexbox%20%2B%20JavaScript%20Image%20Gallery/index)
+[Demo](https://danieltschang.github.io/Pure-Javascript-30/05.%20Flexbox%20%2B%20JavaScript%20Image%20Gallery/index)
 
 [參考](https://wcc723.github.io/css/2017/07/21/css-flex/)
 - Flex
@@ -221,7 +221,7 @@ transition 的事件
 flex 變化在 chrome 為 flex-grow 事件，在 safari 為 flex 事件，可用 if (e.propertyName.includes('flex')) 解決
 
 ## Day 6 - Ajax Type Ahead with fetch()
-[Demo](https://danieltschang.github.io/Pure-Javascript-30/6.%20Ajax%20Type%20Ahead%20with%20fetch/index)
+[Demo](https://danieltschang.github.io/Pure-Javascript-30/06.%20Ajax%20Type%20Ahead%20with%20fetch/index)
 
 -  regular expression
     當正規表達式為定值時，使用此方法可獲得較佳效能。
@@ -303,7 +303,7 @@ function numberWithCommas(x) {
     ```
    
 ## Day 8 - HTML5 Canvas
-[Demo](https://danieltschang.github.io/Pure-Javascript-30/8.%20Fun%20with%20HTML5%20Canvas/index)
+[Demo](https://danieltschang.github.io/Pure-Javascript-30/08.%20Fun%20with%20HTML5%20Canvas/index)
 - 三個不同的event type
     - mousedown
         - 滑鼠按下去
