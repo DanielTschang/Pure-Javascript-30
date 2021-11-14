@@ -332,6 +332,8 @@ function numberWithCommas(x) {
 `hsl(hue, saturation, lightness)`
 
 ## Day 9 - Dev Tools
+`const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];`
+
 - Regular
 `console.log('yoyo')`
 
@@ -389,3 +391,37 @@ console.log(data);
 
 console.table(dogs);
 ```
+## Day 10
+[Demo](https://danieltschang.github.io/Pure-Javascript-30/10.%20Hold%20Shift%20and%20Check%20Checkboxes/index)
+### 要做按住shift一次多選checkbox的功能 
+- 用 `e.shiftKey` 確定按住shift點選
+- 想法不難，inBetween 當 flag每次都走訪全部checkbox，只要碰到打勾的就開始始將下面全部都打勾，然後碰到上次打勾的，就停止
+
+## Day 11
+[Demo](https://danieltschang.github.io/Pure-Javascript-30/11.%20Custom%20Video%20Player/index)
+- Video的Event
+	- 影片是否暫停：`video.paused`
+	- 影片目前時間：`video.currentTime`
+	- 影片總共時間：`video.duration`
+	- 播放影片：`video.play()`
+	- 暫停影片：`video.pause()`
+	- 監聽事件：`video.addEventListener('play' or 'pause' or'timeupdate');`
+- 拉條HTML
+```Html
+<input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+<input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1">
+```
+
+- 影片比例條
+	- 外層
+	`display: flex`
+	`flex: >0`
+	`flex-basis: 100%`
+	- 內層
+	`flex: 0`
+	`flex-basis: progress percentage`
+	
+
+- JS 選取元素長度
+	`e.offsetX`
+	`node.offsetWidth`
