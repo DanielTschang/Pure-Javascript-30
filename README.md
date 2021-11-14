@@ -303,7 +303,7 @@ function numberWithCommas(x) {
     ```
    
 ## Day 8 - HTML5 Canvas
-[Demo](https://danieltschang.github.io/Pure-Javascript-30/08.%20Fun%20with%20HTML5%20Canvas/index)
+[Demo](https://danieltschang.github.io/Pure-Javascript-30/08.%20HTML5%20Canvas/index)
 - 三個不同的event type
     - mousedown
         - 滑鼠按下去
