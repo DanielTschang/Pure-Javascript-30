@@ -428,3 +428,6 @@ console.table(dogs);
 
 ## Day 12
 [Demo](https://danieltschang.github.io/Pure-Javascript-30/12.%20Key%20Sequence%20Detection/index)
+
+## Day 13
+[Demo](https://danieltschang.github.io/Pure-Javascript-30/13.%20Slide%20in%20on%20Scroll/index)
