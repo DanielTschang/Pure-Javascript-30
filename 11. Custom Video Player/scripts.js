@@ -61,7 +61,7 @@ ranges.forEach(range => {
 
 
 progress.addEventListener('click', scrub);
-progress.addEventListener('mousedown', ()=> isChanging = true);
 progress.addEventListener('mousemove', (e)=> isChanging && scrub(e));
+progress.addEventListener('mousedown', ()=> isChanging = true);
 progress.addEventListener('mouseup', ()=> isChanging = false);
 
