@@ -1,5 +1,5 @@
 # Pure-Javascript-30 （Vanilla JS）
-## 每日用純JS完成一個功能 持續30天
+## 純JS完成一個功能
 #### (主要來練習JS)
 
 ## Day 1 - Drum kit
