@@ -425,3 +425,6 @@ console.table(dogs);
 - JS 選取元素長度
 	`e.offsetX`
 	`node.offsetWidth`
+
+## Day 12
+[Demo](https://danieltschang.github.io/Pure-Javascript-30/12.%20Key%20Sequence%20Detection/index)
