@@ -431,3 +431,56 @@ console.table(dogs);
 
 ## Day 13
 [Demo](https://danieltschang.github.io/Pure-Javascript-30/13.%20Slide%20in%20on%20Scroll/index)
+
+## Day 14
+
+### Reference and Copy
+- Array
+	- (Referrence)直接assign值是指標對到address，也就是說假如修改了被assign的值，也會同時修改assign的值
+	```Javascript
+		const players = ['dan', 'mia', 'david', 'Poppy'];
+		const team = players
+		team[3] = 'eliana'
+	```
+	此時`player[3]`也會同時被修改
+	
+	- 解決方法 用copy的 (跟python .copy()一樣)
+		- slice()
+			`const team = players.slice()` 
+		- concat()
+			`const team = [].concat(players)`	 
+		- ES6 spread [...]
+			`const team = [...players]`
+		- Array.from()
+			`const team = Array.from(players)`
+- Objects
+	- 同樣在物件中也會遇到一樣的問題
+	```Javascript
+		const me = {
+			name:'Dan',
+			age:18,
+		}
+		const me2 = me
+		me.number = 28
+	```
+
+	也會發生一樣的事，`me`會多了一個`number:28`
+	
+	- 解決方法 也是用copy的概念
+		- const me2 = Object.assign({},me,{number:28}
+		- 但是這會有一個問題就是當Object中是多層次的 e.g.
+			```Javascript
+				    const me = {
+				      name: 'Dan',
+				      age: 18,
+				      social: {
+					twitter: '@dan',
+					facebook: 'dan.developer'
+				      }
+				    };
+			```
+			
+		當me2修改social內的值的時候，依然會改變me中的social，因為`Object.assign`只會assign第一層，其他依舊是以referrence的方式
+		- 解決辦法
+			- 網路上搜尋deep object assign(stackoverflow會有別人寫好的function)
+			- `const me2 = JSON.parse(JSON.stringify(me))`
